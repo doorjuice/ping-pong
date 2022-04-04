@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4623459237602218337}
   - component: {fileID: 2606759592292785004}
   m_Layer: 0
-  m_Name: Patte (2)
+  m_Name: Patte 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,7 +184,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2964165179813657283}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1a376038ab835664e8a48a0385df7e41, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 2737271313215294494}
   - component: {fileID: 6989407104967085709}
   m_Layer: 0
-  m_Name: Patte (3)
+  m_Name: Patte 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 8250891064483245543}
   - component: {fileID: 988357857028207946}
   m_Layer: 0
-  m_Name: Patte
+  m_Name: Patte 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 5632300674648981306}
   - component: {fileID: 5632300674648981307}
   m_Layer: 0
-  m_Name: Table
+  m_Name: Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -505,7 +505,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5632300674648981300}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 02a98b63035b549419e9646095a587cf, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 7034636520857992616}
   - component: {fileID: 6206327993196630774}
   m_Layer: 0
-  m_Name: Patte (1)
+  m_Name: Patte 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
