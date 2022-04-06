@@ -6,15 +6,22 @@ public class RaquetteJoueur : MonoBehaviour
 {
     public float sensitivity = 0.2f;
 
+    //private float mousePosX = Input.mousePosition.x;
+
     // Update is called once per frame
     void FixedUpdate()
     {
-        float deplacement = Input.GetAxis("Horizontal");
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.AddForce(deplacement * sensitivity * Time.deltaTime, 0, 0, ForceMode.Force);
+        //var deplacement = Input.mousePosition.x - mousePosX;
+        //mousePosX = Input.mousePosition.x;
+        //Debug.Log(deplacement);
 
-        var posi = transform.position;
-        posi.x = Mathf.Clamp(posi.x, -1.5f, 1.5f);
-        transform.position = posi;
+        //Rigidbody rb = GetComponent<Rigidbody>();
+        //rb.AddForce(deplacement * sensitivity, 0, 0, ForceMode.Force);
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+            Debug.Log(hit.point);
+
     }
 }
