@@ -4,17 +4,34 @@ using UnityEngine;
 
 public class RaquetteJoueur : MonoBehaviour
 {
-    public float sensitivity = 0.2f;
+    public float sensitivity = 0.01f;
 
-    //private float mousePosX = Input.mousePosition.x;
+    private float mousePosX;
+
+    private void Awake()
+    {
+        mousePosX = Input.mousePosition.x;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //var deplacement = Input.mousePosition.x - mousePosX;
-        //mousePosX = Input.mousePosition.x;
-        //Debug.Log(deplacement);
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null && rb.isKinematic)
+            KinematicControl();
+        else
+            PhysicsControl();
+    }
 
+    void KinematicControl()
+    {
+        var deplacementX = Input.mousePosition.x - mousePosX;
+        mousePosX = Input.mousePosition.x;
+        transform.Translate(deplacementX * sensitivity, 0, 0, Space.World);
+    }
+
+    void PhysicsControl()
+    {
         //Rigidbody rb = GetComponent<Rigidbody>();
         //rb.AddForce(deplacement * sensitivity, 0, 0, ForceMode.Force);
 
@@ -22,6 +39,5 @@ public class RaquetteJoueur : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
             Debug.Log(hit.point);
-
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -298,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7112845945412830981, guid: 8c5ff36835242ad4991ded40fd9e0514, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.253
+      value: -0.315
       objectReference: {fileID: 0}
     - target: {fileID: 7112845945412830981, guid: 8c5ff36835242ad4991ded40fd9e0514, type: 3}
       propertyPath: m_LocalPosition.y
@@ -529,6 +529,10 @@ PrefabInstance:
       value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 8985580321485803786, guid: 1bdb16229b2bffe42b3902546705676d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985580321485803786, guid: 1bdb16229b2bffe42b3902546705676d, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 1a376038ab835664e8a48a0385df7e41, type: 2}
@@ -678,7 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b6ac5ead7d6f4eabc547b35cddb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 0.001
+  sensitivity: 0.005
 --- !u!54 &1927343372
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -691,7 +695,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
